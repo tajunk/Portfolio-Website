@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taylor Awde's Portfoloio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <header id="home">
+    <nav id="nav"> 
+      <div class="nav-center">
+        <div class="nav-header">
+          <img src="./logo.png" alt="TaylorAwde" class="logo">
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#home" class="scroll-link">home</a>
+            </li>
+            <li>
+              <a href="#projects" class="scroll-link">projects</a>
+            </li>
+            <li>
+              <a href="#about" class="scroll-link">about</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+      <div class="container">
+        <h1>Welcome to my Portfolio page</h1>
+        <p>Take a look at some of my work and other information below</p>
+        <a href="#projects" class="scroll-link btn btn-white">
+          Explore projects
+        </a>
+      </div>
+    </div>
+  </header>
+  <section id="projects" class="section">
+    <div class="title">
+      <h2>My <span>Projects</span></h2>
+    </div>
+  </section>
+  <section id="about" class="section">
+    <div class="title">
+      <h2>About <span>Me</span></h2>
+      <p>I'm a computer programmer from Beaumont Alberta. I graduated in the Digital Media and IT program,
+         under the Computer Software Development Concentration, from NAIT in Edmonton Alberta in 2020.
+         I have experience with C#, Java, Javascript, React, SQL, and other various related tools. On a personal note, I'm an avid weight lifter
+         who also enjoys music, rock climbing and gaming.</p>
+         <div>
+          <a href="" class="btn btn-black">
+            Contact Me
+          </a>
+         </div>
+         <div>
+          <a href="https://github.com/tajunk" class="btn btn-black scnBtn">
+            My GitHub
+          </a>
+         </div>
+         <div>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+         </div> 
+    </div>
+  </section>
+  <footer class="section">
+    <p>
+      Portolio website created with vanilla javascript.
+    </p>
+    <br>
+    <p>
+      copyright &copy; Taylor Awde <span id="date"></span>. all rights reserved.
+    </p>
+  </footer>
+  <a href="#home" class="scroll-link top-link">
+    <i class="fas fa-angle-double-up"></i>
+  </a>
+  <script src="app.js"></script>   
+  </body>
+</html>

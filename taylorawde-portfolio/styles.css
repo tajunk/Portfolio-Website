@@ -220,7 +220,6 @@ p {
   padding-left: 24px;
   padding-right: 24px;
   margin-top: 20px;
-  margin-bottom: 12px;
 }
 /* section */
 .personal-img {
@@ -235,11 +234,12 @@ p {
 }
 .project-img {
   margin-bottom: 2rem;
+  margin: 0 auto;
 }
-.project-img img {
+.project-img video {
   border-radius: var(--radius);
-  object-fit: cover;
-  height: 20rem;
+  height: 30rem;
+  margin: 0 auto;
 }
 .text-box {
   padding-bottom: 20px;
@@ -256,10 +256,6 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
-  }
-  .text-box {
-    margin-left: 350px;
-    margin-right: 350px;
   }
 }
 main {

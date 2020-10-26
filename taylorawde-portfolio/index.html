@@ -37,7 +37,7 @@
     </nav>
     <div class="banner">
       <div class="container">
-        <h1>Welcome to my Portfolio page</h1>
+        <h1>Welcome to my Portfolio</h1>
         <p>Take a look at some of my work and other information below</p>
         <a href="#projects" class="scroll-link btn btn-white">
           Explore projects
@@ -48,41 +48,55 @@
   <section id="projects" class="section">
     <div class="title">
       <h2>My <span>Projects</span></h2>
+      <div class="leftright-container">
+        <button class="prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
     </div>
       <div class="project-center section-center">
         <article class="project-img">
-          <img src="bannerpic.jpg" alt="project picture">
+          <video id="proj-Video" autoplay loop muted>
+            <!-- Dynamically added with JS -->
+            <source src="" type="video/mp4" > 
+          </video>
         </article>
         <article class="project">
           <!-- btn container -->
           <div class="btn-container">
             <button class="tab-btn active" data-id="overview">Overview</button>
-            <button class="tab-btn" data-id="skills">Skills Used</button>
+            <button class="tab-btn" data-id="skills">Built With</button>
             <button class="tab-btn" data-id="github">GitHub</button>
           </div>
           <article class="project-content">
             <!-- single item -->
             <div class="content active" id="overview">
-              <h4>Overview</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet itaque, maxime minus laboriosam eos minima impedit sint
-                amet voluptas similique.
+              <h4 id="proj-Title"><!-- Dynamically added with JS --></h4>
+              <p id="proj-Description">
+                <!-- Dynamically added with JS -->
               </p>
             </div>
             <!-- end of single item -->
             <!-- single item -->
             <div class="content" id="skills">
-              <h4>Skills Used</h4>
-              <p>
-                Skills Baby
-              </p>
+              <h4>Built With</h4>
+              <ul>
+                <li id="proj-Skill1"><!-- Dynamically added with JS --></li>
+                <li id="proj-Skill2"><!-- Dynamically added with JS --></li>
+                <li id="proj-Skill3"><!-- Dynamically added with JS --></li>
+                <li id="proj-Skill4"><!-- Dynamically added with JS --></li>
+                <li id="proj-Skill5"><!-- Dynamically added with JS --></li>
+              </ul>
             </div>
             <!-- end of single item -->
             <!-- single item -->
             <div class="content" id="github">
               <h4>GitHub</h4>
-              <a href="https://github.com/tajunk" class="btn btn-black scnBtn">
+              <!-- Dynamically added with JS -->
+              <a id="proj-GitHub" href="" class="btn btn-black scnBtn">
                 View on GitHub
               </a>
             </div>
@@ -98,8 +112,8 @@
         <img src="profilepic.png" alt="Taylor">
       </article>
       <div class="text-box">
-        <p>I'm a computer programmer from Beaumont Alberta. I graduated in the Digital Media and IT program,
-          under the Computer Software Development Concentration, from NAIT in Edmonton Alberta in 2020.
+        <p>I'm a software developer from Beaumont, Alberta. I graduated in the Digital Media and IT program,
+          under the Computer Software Development Concentration, in Edmonton from NAIT in 2020.
           I have experience with C#, Java, Javascript, React, SQL, and other various related tools. On a personal note, I'm an avid weight lifter
           who also enjoys music, rock climbing and gaming.</p>
       </div>

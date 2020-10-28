@@ -143,6 +143,13 @@ p {
   }
 }
 /*  global classes */
+li {
+  text-align: center;
+  padding: 5px;
+}
+.centerProj {
+  text-align: center;
+}
 .projTitle {
   padding-top: 1.50rem;
 }
@@ -233,7 +240,7 @@ p {
 .scnBtn {
   padding-left: 24px;
   padding-right: 24px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 /* section */
 .personal-img {
@@ -273,7 +280,7 @@ p {
   }
   #about,
   #projects {
-  height: 80vh!important;
+  height: 120vh!important;
   }
   .project-img video {
     height: 36rem;
@@ -456,8 +463,8 @@ header {
 }
 @media screen and (min-width: 768px) {
   .title p {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 140px;
+    padding-right: 140px;
   }
 }
 .title span {

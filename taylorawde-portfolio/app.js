@@ -104,35 +104,36 @@ const projectData = [
         id: 1,
         projTitle: "Fit Tracker",
         projDescription: "Created in Android Studio with the Java programming language. SQLite was used to handle "+
-        "creating profiles as well as saving laps to a unique session created by the user all saved locally. The idea here with this "+
+        "creating profiles as well as saving laps to a unique session created by the user all saved locally. The idea with this "+
         "app was to expand on a simple timer app and give it more functionality with profiles, automatic laps, calorie burning calculations, "+
         "and session tracking.",
         projGitHub: "https://github.com/tajunk/Fitness-App--Android-",
         projVideo: "android-project.mp4",
         projSkill1: "Java",
         projSkill2: "SQLite",
-        projSkill3: "AndroidStudio",
+        projSkill3: "Android Studio",
     },
     {
         id: 2,
-        projTitle: "Infinite Jumping Game",
+        projTitle: "Q & A Web App",
+        projDescription: "React good. Employer like.",
+        projGitHub: "https://github.com/tajunk/React-C.NET-Project",
+        projVideo: "qareact-project.mp4",
+        projSkill1: "React",
+        projSkill2: "Typescript",
+        projSkill3: "C#",
+        projSkill4: ".NET Core",
+        projSkill5: "SQL",
+        projSkill6: "Auth0",       
+    },
+    {
+        id: 3,
+        projTitle: "Infinite Jump",
         projDescription: "I'll write this shit later",
         projGitHub: "https://github.com/tajunk/Jump-Game--Phaser3-Javascript-",
         projVideo: "jsgame-project.mp4",
         projSkill1: "Javascript",
         projSkill2: "Phaser3",
-    },
-    {
-        id: 3,
-        projTitle: "Q&A Web App",
-        projDescription: "React good. Employer like.",
-        projGitHub: "https://github.com/tajunk/React-C.NET-Project",
-        projVideo: "android-project.mp4",
-        projSkill1: "React",
-        projSkill2: "Typescript",
-        projSkill3: "C#",
-        projSkill4: ".NET Core",
-        projSkill5: "Auth0",
     }
 ];
 
@@ -145,6 +146,7 @@ const skill2 = document.getElementById("proj-Skill2");
 const skill3 = document.getElementById("proj-Skill3");
 const skill4 = document.getElementById("proj-Skill4");
 const skill5 = document.getElementById("proj-Skill5");
+const skill6 = document.getElementById("proj-Skill6");
 
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
@@ -167,6 +169,7 @@ function showProject(project) {
     skill3.textContent = item.projSkill3;
     skill4.textContent = item.projSkill4;
     skill5.textContent = item.projSkill5;
+    skill6.textContent = item.projSkill6;
 };
 // Show next project
 nextBtn.addEventListener("click", function() {

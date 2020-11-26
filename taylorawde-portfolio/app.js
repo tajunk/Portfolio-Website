@@ -23,6 +23,8 @@ navToggle.addEventListener("click", function() {
 // Fixed navbar
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
+const logo = document.getElementById("logoImg");
+const menuBars = document.getElementById("menuBars");
 
 window.addEventListener("scroll", function() {
     const scrollHeight = window.pageYOffset;
@@ -30,9 +32,13 @@ window.addEventListener("scroll", function() {
     // Fixed nav
     if(scrollHeight > navHeight){
         navbar.classList.add("fixed-nav");
+        menuBars.classList.remove("white");   
+        logo.src = "logo.png";
     }
     else{
         navbar.classList.remove("fixed-nav");
+        menuBars.classList.add("white");
+        logo.src = "logowhite.png";
     }
     // Back to top button
     if(scrollHeight > 500){
@@ -105,7 +111,7 @@ const projectData = [
         projTitle: "Fit Tracker",
         projDescription: "Created in Android Studio with the Java programming language. SQLite was used to handle "+
         "creating profiles as well as saving laps to a unique session created by the user all saved locally. The idea with this "+
-        "app was to expand on a simple timer app and give it more functionality with profiles, automatic laps, calorie burning calculations, "+
+        "project was to expand on a simple timer app and give it more functionality with profiles, automatic laps, calorie burning calculations, "+
         "and session tracking.",
         projGitHub: "https://github.com/tajunk/Fitness-App--Android-",
         projVideo: "android-project.mp4",
@@ -116,7 +122,13 @@ const projectData = [
     {
         id: 2,
         projTitle: "Q & A Web App",
-        projDescription: "React good. Employer like.",
+        projDescription: "This project is a single-page application (SPA) or web app developed in React. The goal with this project was to create a "+
+        "web app that could be used by multiple users as a service to post questions themselves or answer/search questions posted by "+
+        "other users. Security functionality was implemented using Auth0, accounts for the web app are created through the Auth0 service "+
+        "and are required to access the additional functionality of the web app. Before logging in a user can only view answered/unanswered "+
+        "questions, answers and use the search functionality, but when they are logged in they can now post a question or answer a question "+
+        "already posted. Created using the ASP.NET Core framework for the backend, coded in C#, to interact with a database in SQL Server. "+
+        "The frontend was built using the React library, using Redux for state management, and coded with Typescript.",
         projGitHub: "https://github.com/tajunk/React-C.NET-Project",
         projVideo: "qareact-project.mp4",
         projSkill1: "React",
@@ -129,11 +141,15 @@ const projectData = [
     {
         id: 3,
         projTitle: "Infinite Jump",
-        projDescription: "I'll write this shit later",
+        projDescription: "A simple game that runs in a web browser developed in Javascript using Phaser3 which is a HTML5 framework that allows WebGL rendering in browsers. "+
+        "The goal with this project was to try something new while expanding on my Javascript knowledge. Users control the rabbit to collect as many carrots as "+
+        "possible, going upwards with platforms being generated off screen infinitely, until they inevitably fall off screen in which they will be presented with "+ 
+        "a 'Game Over' screen, their score total and a prompt to play again.",
         projGitHub: "https://github.com/tajunk/Jump-Game--Phaser3-Javascript-",
         projVideo: "jsgame-project.mp4",
         projSkill1: "Javascript",
-        projSkill2: "Phaser3",
+        projSkill2: "HTML5",
+        projSkill3: "Phaser3",
     }
 ];
 

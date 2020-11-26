@@ -9,15 +9,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png"/>
   </head>
   <body>
    <header id="home">
     <nav id="nav"> 
       <div class="nav-center">
         <div class="nav-header">
-          <img src="./logo.png" alt="TaylorAwde" class="logo">
+          <a href="#"><img src="./logowhite.png" alt="TaylorAwde" class="logo" id="logoImg"></a>
           <button class="nav-toggle">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars white" id="menuBars"></i>
           </button>
         </div>
         <div class="links-container">
@@ -82,7 +83,7 @@
             <!-- end of single item -->
             <!-- single item -->
             <div class="content" id="skills">
-              <h4 class="centerProj">Built With</h4>
+              <h4 class="title">Built With</h4>
               <ul>
                 <li id="proj-Skill1"><!-- Dynamically added with JS --></li>
                 <li id="proj-Skill2"><!-- Dynamically added with JS --></li>
@@ -95,11 +96,13 @@
             <!-- end of single item -->
             <!-- single item -->
             <div class="content" id="github">
-              <h4 class="centerProj">GitHub</h4>
-              <!-- Dynamically added with JS -->
-              <a id="proj-GitHub" href="" class="btn btn-black scnBtn">
-                View on GitHub
-              </a>
+              <h4 class="title">GitHub</h4>             
+              <div class="title">
+                <!-- Dynamically added with JS -->
+                <a id="proj-GitHub" href="" class="btn btn-black scnBtn">
+                  View on GitHub
+                </a>
+              </div>
             </div>
             <!-- end of single item -->
             </article>
@@ -137,7 +140,7 @@
   </section>
   <footer class="section">
     <p>
-      Portolio website created with vanilla javascript.
+      Portfolio website created with vanilla javascript.
     </p>
     <br>
     <p>

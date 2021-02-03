@@ -99,6 +99,7 @@ project.addEventListener('click', function (e) {
     articles.forEach(function (article) {
       article.classList.remove('active');
     });
+
     const element = document.getElementById(id);
     element.classList.add('active');
   }
@@ -109,8 +110,8 @@ const projectData = [
     id: 1,
     projTitle: 'Q & A Web App',
     projDescription:
-      'This project is a web app developed in React. The goal with this project was to create an ' +
-      'a mini forum like question and answer environment where multiple users could be logging in both posting ' +
+      'This project is a web app developed in React. The goal with this project was to create a ' +
+      'mini forum like question and answer environment where multiple users could be logging in both posting ' +
       'and answering questions. Security functionality was implemented using Auth0, accounts for the web app are created through the Auth0 login service ' +
       'and are required to access the additional functionality of the web app. Before logging in a user can only view answered / unanswered ' +
       'questions, answers and use the search functionality, but when they are logged in they can now post a question or answer a question ' +
@@ -146,7 +147,8 @@ const projectData = [
       'A simple game that runs in a web browser developed in Javascript using Phaser3 which is a HTML5 framework that allows WebGL rendering in browsers. ' +
       'The goal with this project was to try something new while expanding on my Javascript knowledge. Users control the rabbit to collect as many carrots as ' +
       'possible, going upwards with platforms being generated off screen infinitely, until they inevitably fall off screen in which they will be presented with ' +
-      "a 'Game Over' screen, their score total and a prompt to play again.",
+      'a "Game Over" screen, their score total and a prompt to play again.' +
+      '   Check it out at https://infinite-jumping-game.netlify.app/ ',
     projGitHub: 'https://github.com/tajunk/Jump-Game--Phaser3-Javascript-',
     projVideo: 'jsgame-project.mp4',
     projSkill1: 'Javascript',
@@ -165,7 +167,6 @@ const skill3 = document.getElementById('proj-Skill3');
 const skill4 = document.getElementById('proj-Skill4');
 const skill5 = document.getElementById('proj-Skill5');
 const skill6 = document.getElementById('proj-Skill6');
-const playBtn = document.getElementById('play-btn');
 
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
@@ -189,35 +190,7 @@ function showProject(project) {
   skill4.textContent = item.projSkill4;
   skill5.textContent = item.projSkill5;
   skill6.textContent = item.projSkill6;
-  console.log(item);
 }
-
-function showBtn() {
-  if ((projectData.id = 1)) {
-    playBtn.classList.add('btn-new');
-    playBtn.classList.remove('hide-btn');
-  } else if ((projectData = 2)) {
-    playBtn.classList.add('hide-btn');
-    playBtn.classList.remove('btn-new');
-  }
-}
-
-project.addEventListener('click', function (e) {
-  const id = e.target.dataset.id;
-  if (id) {
-    // Remove active from other buttons
-    btns.forEach(function (btn) {
-      btn.classList.remove('active');
-      e.target.classList.add('active');
-    });
-    // Hide other articles
-    articles.forEach(function (article) {
-      article.classList.remove('active');
-    });
-    const element = document.getElementById(id);
-    element.classList.add('active');
-  }
-});
 
 // Show next project
 nextBtn.addEventListener('click', function () {
